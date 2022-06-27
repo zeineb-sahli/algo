@@ -1,0 +1,18 @@
+ALGORITHM  
+VAR
+    expression:='hello nice to meet you .' , 
+    ch:CHAR;
+    len:=0;
+    numwords:=0;
+    numvowels:=0;
+BEGIN
+    while (expression<>'.')do
+    read (ch);
+    len=len+1
+    if(ch =='')
+    numwords=numwords+1;
+    if((ch==='a' or ch==='A' )and (ch==='e' or ch==='E') and (ch==='i'or ch==='I') and (ch==='o' or ch==='O') 
+        and (ch==='u' or ch==='U') and (ch==='y' or ch==='Y'))
+        numvowels=numvowels+1;
+    write(len , numwords,numvowels)
+END 
